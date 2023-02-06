@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  width: 100%;
+  max-width: 360px;
+  min-height: 447px;
+
+  &:nth-child(1) {
+    background: url("../assets/images/desktop/image-gallery-milkbottles.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(2) {
+    background: url("../assets/images/desktop/image-gallery-orange.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3) {
+    background: url("../assets/images/desktop/image-gallery-cone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4) {
+    background: url("../assets/images/desktop/image-gallery-sugarcubes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

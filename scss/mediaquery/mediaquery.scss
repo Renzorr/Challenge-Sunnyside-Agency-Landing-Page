@@ -1,0 +1,129 @@
+@use "../components/variables.scss" as v;
+
+@media (max-width: 1200px) {
+  .features_content {
+    padding: 30px 30px 30px 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: inherit;
+    width: 100%;
+  }
+
+  .header {
+    background: url("../assets/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_links {
+    position: absolute;
+    flex-direction: column;
+    background: v.$white;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    padding-block: 50px;
+    color: v.$dark-grayish-blue;
+    transition: 0.4s;
+
+    &.active {
+      top: 20%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5%;
+      right: 0;
+      border-top: 40px solid rgb(0 0 0 / 0%);
+      border-right: 40px solid v.$white;
+      border-bottom: 40px solid rgb(0 0 0 / 0%);
+    }
+  }
+
+  .contact {
+    background-color: v.$yellow;
+  }
+  .nav_logo {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .features {
+    flex-direction: column-reverse;
+  }
+
+  .feature_img {
+    display: none;
+  }
+
+  .feature_img_responsive {
+    display: inherit;
+    width: 100%;
+  }
+
+  .features_content {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 30px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work_item {
+    max-width: inherit;
+    width: 100%;
+  }
+
+  .testimonial_card_section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  .photo {
+    height: fit-content;
+    width: 50%;
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    height: 650px;
+  }
+
+  .header_title {
+    padding-block: 95px;
+    font-size: 40px;
+    padding-inline: 20px;
+  }
+
+  .features_content {
+    padding: 70px 30px;
+  }
+
+  .work_content {
+    width: 100%;
+    padding-inline: 30px;
+  }
+}

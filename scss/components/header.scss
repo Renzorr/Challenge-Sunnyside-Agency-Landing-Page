@@ -1,0 +1,25 @@
+@use "./variables.scss" as v;
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../assets/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 800px;
+  text-align: center;
+}
+
+.header_title {
+  padding-block: 95px;
+  font-family: "Fraunces", serif;
+  color: v.$white;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+}

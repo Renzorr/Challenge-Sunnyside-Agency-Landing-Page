@@ -1,0 +1,47 @@
+@use "./variables.scss" as v;
+
+.work {
+  display: flex;
+  align-items: center;
+}
+
+.work_item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 60px;
+  color: v.$dark-desaturated-cyan-text;
+  max-width: 720px;
+  height: 603px;
+
+  &.graphic {
+    background: url("../assets/images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: 50%;
+
+  }
+
+  &.photography {
+    background: url("../assets/images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: 50%;
+  }
+}
+
+.work_content {
+  width: 49%;
+
+  h3 {
+    font-size: 30px;
+    font-family: "Fraunces", serif;
+    padding-bottom: 25px;
+  }
+
+  p {
+    font-size: 17px;
+    font-family: "Barlow", sans-serif;
+    line-height: 27px;
+  }
+}

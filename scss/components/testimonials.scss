@@ -1,0 +1,65 @@
+@use "./variables.scss" as v;
+
+.testimonial {
+  padding-block: 157px 163px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial_card_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.testimonial_title {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: v.$grayish-blue;
+}
+
+.testimonial_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 380px;
+  padding-inline: 10px;
+
+  img {
+    border-radius: 50%;
+    width: 73px;
+  }
+
+  p {
+    color: v.$grayish-blue;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 30px;
+    width: 93%;
+    padding-top: 70px;
+  }
+}
+
+.testimonial_author {
+  padding-top: 73px;
+
+  h3 {
+    font-size: 18px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+
+  span {
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: v.$grayish-blue;
+  }
+}

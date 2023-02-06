@@ -1,0 +1,76 @@
+@use "./variables.scss" as v;
+
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature_img {
+  max-width: 2000px;
+  height: 100%;
+}
+
+.features_content {
+  padding: 30px 30px 30px 165px;
+}
+
+.features_title {
+  width: 85%;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 41px;
+  padding-bottom: 35px;
+}
+
+.features_paragraph {
+  font-family: "Barlow", sans-serif;
+  font-size: 18.5px;
+  width: 80%;
+  line-height: 25px;
+  color: v.$very-dark-grayish-blue;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+.features_link {
+  position: relative;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-left: 11.5px;
+
+  &::after {
+    position: absolute;
+    bottom: -30%;
+    left: 5%;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 15px;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.transform::after {
+  background-color: v.$yellow;
+}
+
+.stand-out::after {
+  background-color: v.$soft-red;
+}
+
+.feature_img_responsive {
+  display: none;
+}
