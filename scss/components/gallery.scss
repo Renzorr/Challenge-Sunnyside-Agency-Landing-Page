@@ -7,6 +7,11 @@
   width: 100%;
   max-width: 360px;
   min-height: 447px;
+  transition: 0.4s;
+
+  &:hover {
+    filter: contrast(130%);
+  }
 
   &:nth-child(1) {
     background: url("../assets/images/desktop/image-gallery-milkbottles.jpg");

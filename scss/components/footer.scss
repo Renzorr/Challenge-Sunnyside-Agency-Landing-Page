@@ -29,14 +29,15 @@
 }
 
 .footer_links {
-  padding-top: 50px;
   font-size: 18.5px;
   font-family: "Barlow", sans-serif;
-  letter-spacing: -0.5px;
+  color: v.$dark-desaturated-cyan-text;
   display: flex;
   align-items: center;
   gap: 59px;
-  color: v.$dark-desaturated-cyan-text;
+  padding-top: 50px;
+  letter-spacing: -0.5px;
+  opacity: 0.8;
 }
 
 .footer_socials {
